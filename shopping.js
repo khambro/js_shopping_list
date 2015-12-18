@@ -1,11 +1,12 @@
 window.onload = function () {
 
   var container = document.getElementById("container");
-  var lister = document.getElementById("lister");
+  // var lister = document.getElementById("lister");
   var item  = document.getElementById("item");
   var itemsDiv = document.getElementById("items");
   var complete = document.getElementById("complete");
   var listed = document.getElementById("listed");
+  item.focus();
 
 
   container.addEventListener("submit", function (event) {
@@ -33,6 +34,7 @@ window.onload = function () {
     ul.appendChild(li);
     item.value = "";
     date.value = "";
+    item.focus();
 
       button.addEventListener("click", function (event) {
         event.preventDefault();
@@ -41,8 +43,9 @@ window.onload = function () {
         this.parentNode.style.setProperty("text-decoration", "line-through");
         this.previousSibling.remove();
         this.parentNode.parentNode.appendChild(this.parentNode);
-
         this.parentNode.appendChild;
+        this.remove();
+        item.focus();
       });
 
       erase.addEventListener("click", function (event) {
@@ -52,6 +55,7 @@ window.onload = function () {
           goAway.addEventListener("click", function (event) {
             event.preventDefault();
             erase.parentNode.remove(li);
+            item.focus();
         });
       });
 
