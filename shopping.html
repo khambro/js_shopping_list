@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <title>Let's Shop!</title>
     <script src="/shopping.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
     <h1>Time to Shop!</h1>
 
   <div class= "container" id="container">
 
-
     <form name="lister" id="lister">
       <input type="text" name="item" id="item" value="" placeholder="what should we buy?">
+      <input type="text" name="due"  id="due"  value="" placeholder="when is it needed by?">
       <input type="submit" id="submit" value="add to list">
 
     </form>
@@ -20,16 +21,10 @@
 
     <div class="items" id="items">
       <ul id="listed">
-    
+
       </ul>
     </div>
   </div>
 
   </body>
 </html>
-
-
-As a user I can press a "Complete" button or checkbox, when clicked
-The item is marked as complete
-The item moves to the bottom of the list
-The item becomes gray or semi-transparent to indicate it's complete
