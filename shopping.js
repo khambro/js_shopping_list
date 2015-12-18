@@ -32,21 +32,29 @@ window.onload = function () {
     li.appendChild(erase);
     ul.appendChild(li);
     item.value = "";
-    due.value = "";
+    date.value = "";
 
       button.addEventListener("click", function (event) {
         event.preventDefault();
+        var date  = document.getElementById("due");
         this.parentNode.style.color = 'gray';
         this.parentNode.style.setProperty("text-decoration", "line-through");
+        this.previousSibling.remove();
         this.parentNode.parentNode.appendChild(this.parentNode);
-        this.parentNode.append.appendChild;
+
+        this.parentNode.appendChild;
       });
 
       erase.addEventListener("click", function (event) {
         event.preventDefault();
-        this.parentNode.remove();
-
+        this.innerHTML = "remove item";
+        var goAway = this;
+          goAway.addEventListener("click", function (event) {
+            event.preventDefault();
+            erase.parentNode.remove(li);
+        });
       });
+
 
 
   });

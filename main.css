@@ -1,9 +1,40 @@
 body {
-  background-image: url("shopping.jpeg");
+  background-image: url("shopping2.jpg");
+  background-repeat: no-repeat;
   }
 
 
 h1 {
   text-align: center;
   margin-top: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+
+#li {
+color: #161cbd;
+font-family: 'Shadows Into Light', cursive;
+list-style: none;
+margin: 25px;
+
+}
+
+
+#li #due {
+  color: #767af5;
+  margin: 25px;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  background-image:
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+
 }
